@@ -24,13 +24,17 @@ app.use(cookieParser());
 app.use(CheckforAuthCookie("token"));
 app.use(express.json());
 app.use(cors({
-  origin: [
-    "https://cafeteria-hackathon.vercel.app", 
-    "http://localhost:3000" // For local development
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: (origin, callback) => {
+    const whitelist = ["https://cafeteria-hackathon.vercel.app"]; // Add more domains if necessary
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true,
 }));
+
 
 
 // app.use("/api/geocode/",MapRouter)
