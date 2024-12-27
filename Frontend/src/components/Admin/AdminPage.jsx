@@ -3,7 +3,7 @@ import AddItemImg from "../../assets/add-items.svg";
 import { useUser } from "../userContext";
 import ErrorPage from "../Error/error"
 // const serverURL = "http://192.168.54.63:5000"
-const serverURL = "http://localhost:5000";
+const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app";
 
 function AdminDashboard() {
   const [users, setUsers] = useState([]);
