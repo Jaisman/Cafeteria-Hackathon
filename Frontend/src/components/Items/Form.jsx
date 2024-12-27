@@ -7,7 +7,7 @@ import "./style.css";
 import { useUser } from '../userContext';
 
 // const serverURL = 'http://192.168.54.63:5000';
-const serverURL = "http://localhost:5000"
+const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app"
 
 const MyComponent = () => {
   const { user } = useUser();
