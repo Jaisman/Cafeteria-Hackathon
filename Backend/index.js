@@ -24,10 +24,14 @@ app.use(cookieParser());
 app.use(CheckforAuthCookie("token"));
 app.use(express.json());
 app.use(cors({
-  origin:["https://cafeteria-hackathon.vercel.app/"],
-  methods:["GET", "POST"],
-  credentials: true
+  origin: [
+    "https://cafeteria-hackathon.vercel.app", 
+    "http://localhost:3000" // For local development
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true,
 }));
+
 
 // app.use("/api/geocode/",MapRouter)
 app.use("/api/add-new/",itemRouter)
