@@ -5,7 +5,7 @@ import { CartContext } from "../Cart/CartContext";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 // const serverURL = "http://192.168.54.63:5000"
-const serverURL = "http://localhost:5000";
+const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app"
 
 function UserProfile() {
   const [user, setUser] = useState({
