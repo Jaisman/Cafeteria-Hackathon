@@ -127,7 +127,7 @@ function UserProfile() {
     }
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/review/item/${_id}/review`,
+        `https://cafeteria-hackathon-gqvh.vercel.app/api/review/item/${_id}/review`,
         { user: user._id, comment: review }
       );
       if (res.status == 201) {
