@@ -78,21 +78,26 @@ function App() {
             <Route path="/admin/add-items" element={<AddItem />} />
             <Route path="/about-us" element={<AboutUs />} />
 
-            {items.map((item) =>
-              <Route
-                key={item._id}
-                path={`/info/${item._id}`}
-                element={<Info item={item} />}
-              />
-            )}
+            {items.length > 0 &&
+  items.map((item) => (
+    <Route
+      key={item._id}
+      path={`/info/${item._id}`}
+      element={<Info item={item} />}
+    />
+  ))
+}
 
-            {orders.length>0 && orders.map((order) => (
-              <Route
-                key={order._id}
-                path={`/verify_otp/${order._id}`}
-                element={<OtpVerify order={order} />}
-              />
-            ))}
+{orders.length > 0 &&
+  orders.map((order) => (
+    <Route
+      key={order._id}
+      path={`/verify_otp/${order._id}`}
+      element={<OtpVerify order={order} />}
+    />
+  ))
+}
+
 
 
             <Route path="*" element={<ErrorPage />} />
