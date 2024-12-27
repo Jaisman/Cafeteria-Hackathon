@@ -5,7 +5,7 @@ import OrderConfirmation from './Orderconfirm';
 import "./style.css";
 
 // const serverURL = 'http://192.168.54.63:5000';
-const serverURL = "http://localhost:5000"
+const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app"
 
 const ShoppingCart = () => {
   const { cartItems, clearCart, removeItemFromCart, increaseItemQuantity, decreaseItemQuantity } = useContext(CartContext);
