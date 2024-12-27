@@ -28,8 +28,8 @@ function App() {
     const fetchData = async () => {
       try {
         const [itemsResponse, ordersResponse] = await Promise.all([
-          axios.get(`${serverURL}/api/add-new/items`),
-          axios.get(`${serverURL}/api/orders`),
+          axios.get(`${serverURL}/api/add-new/items`,{ withCredentials: true }),
+          axios.get(`${serverURL}/api/orders`,{ withCredentials: true }),
         ]);
 
         setItems(itemsResponse.data);
