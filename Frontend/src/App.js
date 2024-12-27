@@ -18,7 +18,7 @@ import OtpVerify from './components/Otp_verify/Otp_verify.jsx';
 import axios from 'axios';
 import Navbarr from './components/NavBar/Navbarr';
 
-const serverURL = 'cafeteria-hackathon-gqvh.vercel.app';
+const serverURL = 'https://cafeteria-hackathon-gqvh.vercel.app';
 
 function App() {
   const [Items, setItems] = useState([]);
