@@ -17,7 +17,7 @@ import Info from "./components/Nut_N_Rev/Info";
 import OtpVerify from "./components/Otp_verify/Otp_verify.jsx";
 import axios from "axios";
 
-const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app";
+const serverURL = "https://cafeteria-hackathon.vercel.app";
 
 function App() {
   const [Items, setItems] = useState([]);
