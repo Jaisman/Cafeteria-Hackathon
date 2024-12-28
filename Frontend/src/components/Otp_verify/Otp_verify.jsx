@@ -18,7 +18,7 @@ export default function OtpVerify({ order }) {
     e.preventDefault();
     
       try{
-      const res = await axios.post(`https://cafeteria-hackathon-gqvh.vercel.app/api/verify/${_id}/verifyotp`,{verifyotp:inotp});
+      const res = await axios.post(`https://cafeteria-hackathon.vercel.app/api/verify/${_id}/verifyotp`,{verifyotp:inotp});
       setMessage("");
         navigate("/menu")
       }
