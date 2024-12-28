@@ -9,7 +9,7 @@ import { useCookies } from 'react-cookie';
 // Import the necessary modules from 'swiper/modules'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-const serverURL ="https://cafeteria-hackathon-gqvh.vercel.app"
+const serverURL ="https://cafeteria-hackathon.vercel.app"
 
 const Login2 = () => {
   const [email, setEmail] = useState('');
