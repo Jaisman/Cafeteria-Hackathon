@@ -3,7 +3,7 @@ import "./signup.css";
 import SignUpImage from "../../assets/register.jpg";
 
 // const serverURL = "http://192.168.54.63:5000"
-const serverURL = "https://cafeteria-hackathon-gqvh.vercel.app"
+const serverURL = "https://cafeteria-hackathon.vercel.app"
 
 const SignUp = () => {
   const [fullName, setFullName] = useState('');
