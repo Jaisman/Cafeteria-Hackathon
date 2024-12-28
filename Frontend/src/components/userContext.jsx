@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 
 const UserContext = createContext();
-const serverURL =  "https://cafeteria-hackathon-gqvh.vercel.app"
+const serverURL =  "https://cafeteria-hackathon.vercel.app"
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
